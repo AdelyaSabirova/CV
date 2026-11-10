@@ -1,0 +1,84 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[russian]{babel}
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeXOff]{Times New Roman}
+\usepackage{xspace}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage[a4paper, top=1.25cm, bottom=1.25cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[unicode, draft=false]{hyperref}
+
+\definecolor{linkcolour}{rgb}{0,0.22,0.55}
+\definecolor{rulecolour}{rgb}{0.25,0.25,0.25}
+\hypersetup{
+    colorlinks=true,
+    breaklinks=true,
+    urlcolor=linkcolour,
+    linkcolor=linkcolour,
+    pdftitle={Аделя Ляра - Продуктовый аналитик / Data Analyst},
+    pdfauthor={Ляра Аделя Алмазовна}
+}
+
+\newcolumntype{C}{>{\centering\arraybackslash}X}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\linespread{1.02}
+\emergencystretch=1.5em
+\AtBeginDocument{\shorthandoff{"}}
+
+\titleformat{\section}{\large\bfseries\raggedright}{}{0em}{}[\vspace{1pt}{\color{rulecolour}\titlerule[0.6pt]}]
+\titlespacing{\section}{0pt}{7.5pt}{4pt}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+{\bfseries\huge Аделя Ляра} \\[3pt]
+{\bfseries\normalsize Продуктовый аналитик / Data Analyst - A/B-тесты, продуктовые метрики, SQL, Python, ML} \\[3pt]
+{\small Москва (удаленно) \ $|$ \
+\href{tel:+79869263056}{+7 (986) 926-30-56} \ $|$ \
+\href{https://t.me/Allonse}{Telegram: @Allonse} \ $|$ \
+\href{mailto:adelasabirova295@gmail.com}{adelasabirova295@gmail.com} \ $|$ \
+\href{https://github.com/AdelyaSabirova}{GitHub: AdelyaSabirova}} \\
+\end{tabularx}
+
+\section{О себе}
+Продуктовый аналитик / Data Analyst с 2-летним коммерческим опытом в международном FMCG-бизнесе (Mars, с декабря 2024). Развиваю аналитические веб-инструменты и алгоритмы автоподбора KPI, проектирую и валидирую A/B-эксперименты, строю эконометрические и ML-модели и управленческую отчетность (Python, SQL, Power BI, Streamlit, FastAPI, S3). Финалист (Топ-10 по России) Всероссийского конкурса ВКР Банка России, РЭШ и \mbox{НИУ ВШЭ} (2026), выпускница \mbox{РАНХиГС} ("Цифровая экономика" и профпереподготовка по ML и ИИ).
+
+\section{Опыт работы}
+\begin{tabularx}{\linewidth}{@{} X r @{}}
+\textbf{ООО "Марс" (Mars L.L.C.) - Продуктовый аналитик / Data Analyst} & \textbf{Декабрь 2024 - настоящее время} \\
+\end{tabularx}
+\vspace{2.5pt}
+\begin{itemize}[itemsep=3pt, parsep=0pt, topsep=0pt, leftmargin=1.3em, label=\footnotesize$\bullet$]
+    \item \textbf{Веб-платформа целеполагания и алгоритмический автоподбор целей:} развивала внутренний аналитический веб-инструмент целеполагания для \textbf{150+} территориальных менеджеров с охватом \textbf{3000+} полевых специалистов (Python, Streamlit, Plotly, S3); с нуля спроектировала и внедрила модуль \textbf{алгоритмического автоподбора целевых показателей (KPI)}, автоматизировавший формирование планов и существенно сокративший ручной труд сотрудников; совместно с командой поддерживала управленческие дашборды в Power BI.
+    \item \textbf{Дизайн и валидация офлайн A/B-экспериментов:} спроектировала и провела пилотный A/B-тест перераспределения полочной матрицы между эконом- и премиум-сегментами в розничной сети (стратификация магазинов по кластерам и базовой выручке, ретроспективный A/A-тест, расчет MDE и статистической мощности); на этапе подведения итогов выявила внешнюю контаминацию групп из-за локальных сбоев поставок (out-of-stock) и отклонений полевого протокола выкладки, предотвратив тиражирование статистически некорректного решения на всю сеть.
+    \item \textbf{Эконометрическое моделирование эластичности полки и каннибализации:} построила регрессионные модели оценки эластичности продаж от доли полки и межсегментной каннибализации ассортимента (Python, statsmodels, scikit-learn); устранила мультиколлинеарность с метриками дистрибуции и наличия товара, сформировав рекомендации по оптимизации матрицы без потери совокупной выручки категории.
+    \item \textbf{Автоматизация расчета KPI и агентских выплат:} развивала и автоматизировала веб-сервис расчета выполнения KPI, бонусов и агентского вознаграждения федеральных партнерских агентств (\textbf{3000+} полевых специалистов) на Python (pandas, Streamlit, FastAPI, S3), сократив \textbf{\textasciitilde10-15 часов} ежемесячных ручных сверок Excel.
+\end{itemize}
+
+\section{Образование, исследования и достижения}
+\begin{tabularx}{\linewidth}{@{} X r @{}}
+\textbf{\mbox{РАНХиГС} (Москва) - Бакалавриат "Цифровая экономика" (GPA 4.59 / 5.0)} & \textbf{2022 - 2026} \\
+\textbf{\mbox{РАНХиГС} - Диплом профпереподготовки "Машинное обучение и технологии ИИ"} & \textbf{2026} \\
+\end{tabularx}
+\vspace{2.5pt}
+\begin{itemize}[itemsep=2.5pt, parsep=0pt, topsep=0pt, leftmargin=1.3em, label=\footnotesize$\bullet$]
+    \item \textbf{Финалист (Топ-10 по России) Всероссийского конкурса ВКР Банка России, РЭШ и \mbox{НИУ ВШЭ} (2026):} разработала Python-пайплайн прогнозирования кривой бескупонной доходности ОФЗ по макро- и высокочастотным рыночным индикаторам (Nelson-Siegel, VECM, Random Forest, CatBoost, walk-forward валидация) - снижение вневыборочной RMSE прогноза 10-летних ОФЗ на \textbf{1.94 п.п.} (с 6.41 до 4.47 п.п., \textbf{-30.2\%}) к Random Walk на годовом горизонте (тест Диболда-Мариано $p < 0.05$) и оценка премии за срочность (\textbf{+2.24 п.п.} к консенсус-траектории ставки ЦБ РФ).
+    \item \textbf{Всероссийский хакатон "Цифровой прорыв: сезон ИИ":} \textbf{4-е и 5-е места} в командных треках по анализу данных и машинному обучению. \textbf{Олимпиада \mbox{НИУ ВШЭ} "Высшая проба":} призер по экономике.
+\end{itemize}
+
+\section{Навыки}
+\begin{itemize}[itemsep=2.5pt, parsep=0pt, topsep=0pt, leftmargin=1.3em, label=\footnotesize$\bullet$]
+    \item \textbf{Продуктовая аналитика и эксперименты:} A/B-тестирование (стратификация, A/A-тесты, расчет MDE и мощности, контроль SRM и контаминации), система продуктовых метрик и целеполагания KPI, когортный анализ, удержание (Retention), воронки конверсий, юнит-экономика, статистические критерии.
+    \item \textbf{Эконометрика и ML:} Python (pandas, NumPy, SciPy, statsmodels, scikit-learn, CatBoost), регрессионный анализ эластичности и каннибализации, диагностика мультиколлинеарности, временные ряды (Nelson-Siegel, VAR/VECM, walk-forward валидация), Random Forest, R.
+    \item \textbf{Данные, BI и веб-приложения:} SQL (оконные функции, CTE, оптимизация запросов: PostgreSQL, ClickHouse, MS SQL), Power BI, Streamlit, Plotly, Matplotlib, FastAPI, объектное хранилище S3.
+    \item \textbf{Инфраструктура и языки:} Git, GitLab, Docker, Airflow, Linux; Русский - родной, Английский - B2.
+\end{itemize}
+
+\end{document}
